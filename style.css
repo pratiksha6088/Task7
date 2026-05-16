@@ -1,0 +1,172 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+}
+
+.username{
+    padding:10px 20px;
+    border:none;
+    background:#8ee7ff;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+    min-height:80vh;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    line-height:1.2;
+    color:#222;
+}
+
+.hero-text span{
+    color:#1da1f2;
+}
+
+.hero-text p{
+    margin-top:20px;
+    font-size:18px;
+    color:gray;
+    line-height:1.6;
+}
+
+.btn{
+    margin-top:25px;
+    padding:15px 30px;
+    border:none;
+    background:#1da1f2;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.hero-image img{
+    width:450px;
+}
+
+/* Tablet View */
+
+@media(max-width:992px){
+
+    .navbar{
+        padding:20px 30px;
+    }
+
+    .logo{
+        font-size:26px;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+
+    .hero{
+        padding:40px;
+        gap:30px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-image img{
+        width:320px;
+    }
+}
+
+/* Mobile View */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .username{
+        padding:8px 16px;
+        font-size:14px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .hero-image img{
+        width:250px;
+        margin-top:20px;
+    }
+}
